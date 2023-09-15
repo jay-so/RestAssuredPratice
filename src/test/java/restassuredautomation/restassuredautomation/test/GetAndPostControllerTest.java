@@ -15,7 +15,7 @@ import static org.hamcrest.Matchers.hasItems;
 
 public class GetAndPostControllerTest {
 
-    // @Test
+     @Test
     public void testGet() {
 
         baseURI = "https://reqres.in/api";
@@ -32,11 +32,6 @@ public class GetAndPostControllerTest {
     public void testPost() {
 
         Map<String, Object> map = new HashMap<String, Object>();
-
-//        map.put("name", "Raghav");
-//        map.c
-//
-//        System.out.println("map = " + map);
 
         JSONObject request = new JSONObject(map);
 
