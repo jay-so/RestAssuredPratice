@@ -33,8 +33,16 @@ dependencies {
     testImplementation 'io.rest-assured:rest-assured:4.4.0'
     testImplementation 'io.rest-assured:json-path:4.4.0'
     testImplementation 'io.rest-assured:json-schema-validator:4.4.0'
+
+    //testNG 의존성 추가
+    testImplementation 'org.testng:testng:7.4.0'
 }
 
 tasks.named('test') {
     useJUnitPlatform()
+}
+
+//Test에서 TestNg를 사용하도록 변경함
+test {
+    useTestNG()
 }
